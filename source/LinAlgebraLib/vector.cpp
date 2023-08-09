@@ -30,6 +30,11 @@ Vector3& Vector3::operator=(const Vector3& assigned)
     return *this;
 }
 
+Vector3& Vector3::operator+=(const Vector3& assigned)
+{
+    return *this = *this + assigned;
+}
+
 Vector3 operator+(const Vector3& left, const Vector3& right)
 {
     return Vector3(left.x + right.x, left.y + right.y, left.z + right.z);

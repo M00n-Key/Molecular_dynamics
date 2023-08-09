@@ -15,6 +15,7 @@ public:
     Vector3(float, float, float);
     Vector3(Vector3&);
     Vector3 & operator=(const Vector3&);
+    Vector3& operator+=(const Vector3&);
 
     float magnitude();
     Vector3 normalize();
